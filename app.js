@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
+fs.writeFile('mynewfile3.txt', 'See on minu text', function (err) {
   if (err) throw err;
-  console.log('Saved!');
+  console.log('Replaced!');
 });
