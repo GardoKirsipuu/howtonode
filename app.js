@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-fs.writeFile('mynewfile3.txt', 'See on minu text', function (err) {
+fs.unlink('mynewfile3.txt', function (err) {
   if (err) throw err;
-  console.log('Replaced!');
+  console.log('File deleted!');
 });
